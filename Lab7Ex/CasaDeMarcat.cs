@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab7Ex
 {
-    internal interface IPayable
+    internal class CasaDeMarcat
     {
-        public void MakePayment(int amount);
     }
 }

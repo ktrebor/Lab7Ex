@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab7Ex
+namespace Lab7Ex.Interfaces
 {
-    interface IContactfull : IPayable
+    interface IPayable
     {
-        void InsertDevice();
-        void RemoveDevice();
+        void MakePayment(int amount);
     }
 }

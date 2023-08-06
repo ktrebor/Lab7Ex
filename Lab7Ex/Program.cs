@@ -7,7 +7,7 @@ namespace Lab7Ex
     {
         static void Main(string[] args)
         {
-            var pos = new Pos();
+            var pos = new Pos("POS ak9292lo");
             
             var iPhone = new PhoneDevice("iPhone 20XXL");
             iPhone.MakePayment(100);
@@ -17,7 +17,7 @@ namespace Lab7Ex
 
             var bcrNewCard = new ContactlessDevice("bcr contaless card");
             bcrNewCard.MakePayment(20, true);
-            bcrNewCard.MakePayment(30, false);
+            bcrNewCard.MakePayment(30);
         }
     }
 }

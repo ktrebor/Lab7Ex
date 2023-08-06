@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Lab7Ex.Interfaces;
 
 namespace Lab7Ex.Devices
 {
@@ -23,6 +24,14 @@ namespace Lab7Ex.Devices
         public void RemoveDevice()
         {
             Console.WriteLine("Please remove the CONTACTLESSCARD");
+        }
+
+        public override void MakePayment(int amount)
+        {
+            InsertDevice();
+            base.MakePayment(amount);
+            RemoveDevice();
+
         }
 
         public override void MakePayment(int amount, bool contactless)
