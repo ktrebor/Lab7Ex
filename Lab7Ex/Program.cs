@@ -18,6 +18,10 @@ namespace Lab7Ex
             var bcrNewCard = new ContactlessDevice("bcr contaless card");
             bcrNewCard.MakePayment(20, true);
             bcrNewCard.MakePayment(30);
+
+            var casaDeMarcat = new CasaDeMarcat();
+            casaDeMarcat.CashPayment(50);
+      
         }
     }
 }
